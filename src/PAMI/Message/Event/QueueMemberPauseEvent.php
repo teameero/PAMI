@@ -94,4 +94,14 @@ class QueueMemberPauseEvent extends EventMessage
     {
         return intval($this->getKey('Paused')) != 0;
     }
+
+    /**
+     * Returns key: 'PausedReason'.
+     *
+     * @return string
+     */
+    public function getPausedReason()
+    {
+        return $this->getKey('PausedReason'));
+    }
 }
